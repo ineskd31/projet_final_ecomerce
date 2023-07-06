@@ -1,5 +1,7 @@
 {% load bootstrap5 %}
+
 {% load static %}
+
 <!doctype html>
 <html lang="zxx">
     <head>
@@ -25,6 +27,8 @@
         <title>Xton - eCommerce HTML Template</title>
 
         <link rel="icon" type="image/png" href={% static "assets/img/favicon.png" %}>
+        {%bootstrap_css%}
+        {%bootstrap_javascript%}
     </head>
     <body>
         
@@ -71,7 +75,7 @@
                 <div class="container">
                     <div class="xton-responsive-menu">
                         <div class="logo">
-                            <a href={% static "index.html">
+                            <a href={% static "index.html"%}>
                                 <img src={% static "assets/img/logo.png" %} class="main-logo" alt="logo">
                                 <img src={% static "assets/img/white-logo.png" %} class="white-logo" alt="logo">
                             </a>
@@ -83,7 +87,7 @@
             <div class="xton-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href={% static "index.html">
+                        <a class="navbar-brand" href={% static "index.html"%}>
                             <img src={% static "assets/img/logo.png" %} class="main-logo" alt="logo">
                             <img src={% static "assets/img/white-logo.png" %} class="white-logo" alt="logo">
                         </a>
